@@ -28,7 +28,7 @@ implementation
 
 {$R *.dfm}
 
-uses Unit9, Unit10, Unit11, Unit1, Unit2, Unit3, Unit7, Unit5, Unit6;
+uses Unit9, Unit10, Unit11, Unit1, Unit2, Unit3, Unit7, Unit5, Unit6, Unit12;
 
 procedure TForm8.Button1Click(Sender: TObject);
 begin
@@ -46,10 +46,12 @@ Form5.Show;
 if ListBox1.ItemIndex = 3 then
 ImageDialog.Show;
 if ListBox1.ItemIndex = 4 then
-ButtonDialog.Show;
+PluginsDialog.Show;
 if ListBox1.ItemIndex = 5 then
-Form2.Show;
+ButtonDialog.Show;
 if ListBox1.ItemIndex = 6 then
+Form2.Show;
+if ListBox1.ItemIndex = 7 then
 TextBoxDialog.Show;
 end;
 

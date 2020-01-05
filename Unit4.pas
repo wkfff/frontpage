@@ -48,6 +48,14 @@ implementation
 
 uses Unit7;
 
+function ColorToHex(Color : TColor) : string;
+ begin
+    Result :=
+      IntToHex(GetRValue(Color), 2) +
+      IntToHex(GetGValue(Color), 2) +
+      IntToHex(GetBValue(Color), 2) ;
+ end;
+
 procedure TForm4.Button1Click(Sender: TObject);
 begin
 OpenPictureDialog1.Execute();
@@ -59,17 +67,18 @@ begin
 if (AnsiPos('body', MainForm1.Memo1.Lines[3])<>0) then
 begin
  MainForm1.Memo1.Lines.Insert(3, '<title>' + Edit1.Text + '</title>');
- MainForm1.Memo1.Lines.Insert(4, '<body background="' + Edit2.Text + '" bgcolor="' + ColorBox1.Items[ColorBox1.ItemIndex] + '" text="' + ColorBox2.Items[ColorBox2.ItemIndex] + '">');
+ MainForm1.Memo1.Lines.Insert(4, '<body background="' + Edit2.Text + '" bgcolor="#' + ColorToHex(ColorBox1.Selected) + '" text="#' + ColorToHex(ColorBox2.Selected) + '">');
  MainForm1.Memo1.Lines.Delete(5);
  end else
  if (AnsiPos('body', MainForm1.Memo1.Lines[4])<>0) then
 begin
  MainForm1.Memo1.Lines.Insert(3, '<title>' + Edit1.Text + '</title>');
- MainForm1.Memo1.Lines.Insert(4, '<body background="' + Edit2.Text + '" bgcolor="' + ColorBox1.Items[ColorBox1.ItemIndex] + '" text="' + ColorBox2.Items[ColorBox2.ItemIndex] + '">');
+ MainForm1.Memo1.Lines.Insert(4, '<body background="' + Edit2.Text + '" bgcolor="#' + ColorToHex(ColorBox1.Selected) + '" text="#' + ColorToHex(ColorBox2.Selected) + '">');
  MainForm1.Memo1.Lines.Delete(5);
   MainForm1.Memo1.Lines.Delete(5);
  end;
  MainForm1.Enabled:=True;
+ Form4.Close;
  end;
 
 procedure TForm4.Button3Click(Sender: TObject);

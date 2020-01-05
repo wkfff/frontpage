@@ -2,31 +2,32 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>1899.12.30 00:00:00.000.773,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit10.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.897,C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit10.pas=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\FrontPage\Unit10.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.575,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\FrontPage\Unit3.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.897,C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit10.dfm=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\FrontPage\Unit10.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.477,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit9.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.048,C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit9.pas=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\FrontPage\Unit9.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.542,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\FrontPage\Unit2.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.354,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit6.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.897,C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit10.pas=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\FrontPage\Unit10.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.144,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\FrontPage\Unit5.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.048,C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit9.pas=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\FrontPage\Unit9.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.477,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit9.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.337,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit6.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.618,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\FrontPage\Unit4.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.192,C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Project2.dproj=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\FrontPage\Project2.dproj</Transaction>
     <Transaction>1899.12.30 00:00:00.000.798,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit6.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.337,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit6.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.238,=C:\Users\Дмитрий\Documents\Исходные коды\DMIT Computers FrontPage\Unit12.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.144,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit6.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.621,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit8.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.354,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit6.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.233,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit8.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.092,C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit8.pas=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\FrontPage\Unit8.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.419,C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit11.dfm=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\FrontPage\Unit11.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.233,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit8.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.621,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit8.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.092,C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit8.dfm=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\FrontPage\Unit8.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.906,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit7.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.520,C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit7.pas=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\FrontPage\Unit7.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.906,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit7.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.163,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit11.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.419,C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit11.pas=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\FrontPage\Unit11.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.547,C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit7.dfm=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\FrontPage\Unit7.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.897,C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit10.dfm=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\FrontPage\Unit10.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.419,C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit11.pas=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\FrontPage\Unit11.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.048,C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\Unit9.dfm=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\FrontPage\Unit9.dfm</Transaction>
     <Transaction>1899.12.30 00:00:00.000.134,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\FrontPage\Unit1.pas</Transaction>
-    <Transaction>2019.11.23 13:06:34.144,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\FrontPage\Unit5.pas</Transaction>
-    <Transaction>2019.11.23 18:44:07.991,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\FrontPage\Unit6.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.991,=C:\Users\Дмитрий\Documents\Embarcadero\Studio\Projects\FrontPage\Unit6.pas</Transaction>
   </Transactions>
 </BorlandProject>

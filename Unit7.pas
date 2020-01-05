@@ -36,11 +36,24 @@ type
     Jnrhsnm1: TMenuItem;
     OpenDialog1: TOpenDialog;
     SaveDialog1: TSaveDialog;
-    Timer1: TTimer;
     N13: TMenuItem;
     Memo2: TMemo;
     Panel2: TPanel;
     Label1: TLabel;
+    Panel3: TPanel;
+    Label2: TLabel;
+    Image1: TImage;
+    Label3: TLabel;
+    Panel4: TPanel;
+    Panel5: TPanel;
+    Button5: TButton;
+    Panel6: TPanel;
+    Panel8: TPanel;
+    Panel9: TPanel;
+    Panel7: TPanel;
+    Label4: TLabel;
+    Label5: TLabel;
+    ColorBox1: TColorBox;
     procedure N4Click(Sender: TObject);
     procedure Jnrhsnm1Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
@@ -56,6 +69,9 @@ type
     procedure N5Click(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure Button4Click(Sender: TObject);
+    procedure N19Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
+    procedure ColorBox1Change(Sender: TObject);
   private
     { Private declarations }
   public
@@ -70,6 +86,14 @@ implementation
 {$R *.dfm}
 
 uses Unit8, Unit10, Unit4;
+
+function TColorToHex(Color : TColor) : string;
+ begin
+    Result :=
+      IntToHex(GetRValue(Color), 2) +
+      IntToHex(GetGValue(Color), 2) +
+      IntToHex(GetBValue(Color), 2) ;
+ end;
 
 procedure TMainForm1.Button1Click(Sender: TObject);
 begin
@@ -133,6 +157,32 @@ Memo1.Lines.Delete(Memo1.CaretPos.Y - 2);
 end;
 end;
 
+procedure TMainForm1.Button5Click(Sender: TObject);
+begin
+Panel3.Visible:=False;
+end;
+
+procedure TMainForm1.ColorBox1Change(Sender: TObject);
+var memostr: string;
+var lengfontname: integer;
+begin
+lengfontname:=22;
+
+if not (AnsiPos('<html>', Memo1.Lines[Memo1.CaretPos.Y])<>0) and not (AnsiPos('<body>', Memo1.Lines[Memo1.CaretPos.Y])<>0)  and not (AnsiPos('</body>', Memo1.Lines[Memo1.CaretPos.Y])<>0) and not (AnsiPos('</html>', Memo1.Lines[Memo1.CaretPos.Y])<>0) then
+if not (AnsiPos('<font color', Memo1.Lines[Memo1.CaretPos.Y])<>0) then
+begin
+MainForm1.Memo1.Lines.Insert(Memo1.CaretPos.Y + 1, '<font color="#'+ TColorToHex(ColorBox1.Selected) +'">' + Memo1.Lines[Memo1.CaretPos.Y] + '</font>');
+Memo1.Lines.Delete(Memo1.CaretPos.Y - 2);
+end else
+begin
+memostr:=Memo1.Lines.Strings[Memo1.CaretPos.Y];
+Delete(memostr, length(Memo1.Lines.Strings[Memo1.CaretPos.Y]) - 6, 8);
+Delete(memostr, 1, lengfontname);
+MainForm1.Memo1.Lines.Insert(Memo1.CaretPos.Y + 1, '<font color="#'+ TColorToHex(ColorBox1.Selected) +'">' + memostr + '</font>');
+Memo1.Lines.Delete(Memo1.CaretPos.Y - 2);
+end;
+end;
+
 procedure TMainForm1.ComboBox1Change(Sender: TObject);
 var memostr: string;
 begin
@@ -142,14 +192,14 @@ procedure TMainForm1.ComboBox1Click(Sender: TObject);
 var memostr: string;
 var lengfontname: integer;
 begin
-if (AnsiPos('Arial', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=25;
-if (AnsiPos('Arial Black', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=31;
-if (AnsiPos('Corbel', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=26;
-if (AnsiPos('Impact', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=26;
-if (AnsiPos('Microsoft Sans Serif', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=40;
-if (AnsiPos('Segoe UI', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=28;
-if (AnsiPos('Tahoma', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=26;
-if (AnsiPos('Times New Roman', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=35;
+if (AnsiPos('Arial', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=28;
+if (AnsiPos('Arial Black', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=34;
+if (AnsiPos('Corbel', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=29;
+if (AnsiPos('Impact', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=29;
+if (AnsiPos('Microsoft Sans Serif', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=43;
+if (AnsiPos('Segoe UI', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=31;
+if (AnsiPos('Tahoma', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=29;
+if (AnsiPos('Times New Roman', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=38;
 
 if not (AnsiPos('<html>', Memo1.Lines[Memo1.CaretPos.Y])<>0) and not (AnsiPos('<body>', Memo1.Lines[Memo1.CaretPos.Y])<>0)  and not (AnsiPos('</body>', Memo1.Lines[Memo1.CaretPos.Y])<>0) and not (AnsiPos('</html>', Memo1.Lines[Memo1.CaretPos.Y])<>0) then
 if not (AnsiPos('<font', Memo1.Lines[Memo1.CaretPos.Y])<>0) then
@@ -170,14 +220,14 @@ procedure TMainForm1.ComboBox2Change(Sender: TObject);
 var memostr: string;
 var lengfontname: integer;
 begin
-if (AnsiPos('Arial', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=29;
-if (AnsiPos('Arial Black', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=35;
-if (AnsiPos('Corbel', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=30;
-if (AnsiPos('Impact', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=30;
-if (AnsiPos('Microsoft Sans Serif', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=44;
-if (AnsiPos('Segoe UI', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=32;
-if (AnsiPos('Tahoma', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=30;
-if (AnsiPos('Times New Roman', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=39;
+if (AnsiPos('Arial', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=28;
+if (AnsiPos('Arial Black', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=34;
+if (AnsiPos('Corbel', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=29;
+if (AnsiPos('Impact', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=29;
+if (AnsiPos('Microsoft Sans Serif', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=43;
+if (AnsiPos('Segoe UI', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=31;
+if (AnsiPos('Tahoma', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=29;
+if (AnsiPos('Times New Roman', Memo1.Lines[Memo1.CaretPos.Y])<>0) then lengfontname:=38;
 
 if not (AnsiPos('<html>', Memo1.Lines[Memo1.CaretPos.Y])<>0) and not (AnsiPos('<body>', Memo1.Lines[Memo1.CaretPos.Y])<>0)  and not (AnsiPos('</body>', Memo1.Lines[Memo1.CaretPos.Y])<>0) and not (AnsiPos('</html>', Memo1.Lines[Memo1.CaretPos.Y])<>0) then
 if not (AnsiPos('<font', Memo1.Lines[Memo1.CaretPos.Y])<>0) then
@@ -247,6 +297,11 @@ memo1.lines.savetofile(OpenDialog1.FileName) else memo1.lines.savetofile(SaveDia
 except
 end;
 PrePublish.Show;
+end;
+
+procedure TMainForm1.N19Click(Sender: TObject);
+begin
+Panel3.Visible:=True;
 end;
 
 procedure TMainForm1.N4Click(Sender: TObject);
